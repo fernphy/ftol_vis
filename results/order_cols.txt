@@ -1,0 +1,21 @@
+DATASET_COLORSTRIP
+SEPARATOR TAB
+DATASET_LABEL	Order
+COLOR	#e06666
+COLOR_BRANCHES	0
+SHOW_INTERNAL	1
+STRIP_WIDTH	40
+SHOW_STRIP_LABELS	0
+STRIP_LABEL_SIZE_FACTOR	2
+DATA
+Cyathea_pungens|Loxsomopsis_pearcei	#16F4F8	Cyatheales
+Equisetum_ferrissii|Equisetum_bogotense	#FB00FE	Equisetales
+Sticherus_compactus|Phanerosorus_major	#ECE226	Gleicheniales
+Crepidomanes_inopinatum|Hymenophyllum_paniense	#FA2245	Hymenophyllales
+Angiopteris_cartilagidens|Danaea_erecta	#9C5C75	Marattiales
+Botrychium_ascendens|Mankyua_chejuense	#267DF7	Ophioglossales
+Osmunda_lancea|Osmundastrum_cinnamomeum	#2AF91C	Osmundales
+Archigrammitis_ponapensis|Orthiopteris_ferulacea	#26680D	Polypodiales
+Tmesipteris_obliqua|Psilotum_complanatum	#FD9445	Psilotales
+Marsilea_angustifolia|Salvinia_cucullata	#FD40AF	Salviniales
+Anemia_hispida|Lygodium_palmatum	#005171	Schizaeales
