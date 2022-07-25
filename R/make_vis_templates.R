@@ -96,9 +96,9 @@ order_tips_data <-
   ) %>%
   transmute(rep_tips = rep_tips, color, label = order)
 
-write_tsv(family_tips_data, "family_cols.txt", col_names = FALSE)
+write_tsv(family_tips_data, "results/family_cols.txt", col_names = FALSE)
 
-tsv_text <- read_lines("family_cols.txt")
+tsv_text <- read_lines("results/family_cols.txt")
 
 write_lines(
   c(
@@ -113,12 +113,12 @@ write_lines(
     "DATA",
     tsv_text
   ),
-  "family_cols.txt"
+  "results/family_cols.txt"
 )
 
-write_tsv(order_tips_data, "order_cols.txt", col_names = FALSE)
+write_tsv(order_tips_data, "results/order_cols.txt", col_names = FALSE)
 
-tsv_text <- read_lines("order_cols.txt")
+tsv_text <- read_lines("results/order_cols.txt")
 
 write_lines(
   c(
@@ -134,7 +134,7 @@ write_lines(
     "DATA",
     tsv_text
   ),
-  "order_cols.txt"
+  "results/order_cols.txt"
 )
 
 # Write out internal node labels
@@ -146,9 +146,9 @@ order_tips %>%
   ) %>%
   filter(monophyly == "Yes") %>%
   transmute(text = glue::glue("{rep_tips} = node {taxon}")) %>%
-  write_tsv("node_labels.txt", col_names = FALSE)
+  write_tsv("results/node_labels.txt", col_names = FALSE)
 
-tsv_text <- read_lines("node_labels.txt")
+tsv_text <- read_lines("results/node_labels.txt")
 
 write_lines(
   c(
@@ -157,8 +157,8 @@ write_lines(
     "DATA",
     tsv_text
   ),
-  "node_labels.txt"
+  "results/node_labels.txt"
 )
 
 # Write out tree
-ape::write.tree(fern_tree, "ftol_con_dated_ogdrop_v1.1.0.tre")
+ape::write.tree(fern_tree, "results/ftol_con_dated_ogdrop_v1.1.0.tre")
