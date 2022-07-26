@@ -175,7 +175,7 @@ write_itol_colored_strips <- function(clade_colors, file,
       glue::glue("DATASET_LABEL\t{dataset_lab}"),
       glue::glue("COLOR\t{dataset_col}"),
       "COLOR_BRANCHES\t0", # don't color branches
-      "SHOW_INTERNAL\t0", # show labels for internal nodes
+      "SHOW_INTERNAL\t1", # show labels for internal nodes
       "STRIP_WIDTH\t40",
       "SHOW_STRIP_LABELS\t0", # hide text on labels
       "DATA",
