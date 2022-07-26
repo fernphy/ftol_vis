@@ -1,0 +1,16 @@
+DATASET_STYLE
+SEPARATOR COMMA
+DATASET_LABEL,Order branches
+COLOR,#f4cccc
+DATA
+Cyathea_pungens|Loxsomopsis_pearcei,branch,clade,#2AF6FA,1,normal
+Equisetum_ferrissii|Equisetum_bogotense,branch,clade,#FD26FD,1,normal
+Sticherus_compactus|Phanerosorus_major,branch,clade,#E5E022,1,normal
+Crepidomanes_inopinatum|Hymenophyllum_paniense,branch,clade,#FF0D16,1,normal
+Angiopteris_cartilagidens|Danaea_erecta,branch,clade,#965D70,1,normal
+Botrychium_ascendens|Mankyua_chejuense,branch,clade,#3B81FE,1,normal
+Osmunda_lancea|Osmundastrum_cinnamomeum,branch,clade,#16FA00,1,normal
+Archigrammitis_ponapensis|Orthiopteris_ferulacea,branch,clade,#F3872A,1,normal
+Tmesipteris_obliqua|Psilotum_complanatum,branch,clade,#F02E90,1,normal
+Marsilea_angustifolia|Salvinia_cucullata,branch,clade,#2A713B,1,normal
+Anemia_hispida|Lygodium_palmatum,branch,clade,#D6A0F8,1,normal

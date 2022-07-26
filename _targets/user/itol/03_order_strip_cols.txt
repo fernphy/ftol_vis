@@ -1,0 +1,20 @@
+DATASET_COLORSTRIP
+SEPARATOR TAB
+DATASET_LABEL	Order strips
+COLOR	#e06666
+COLOR_BRANCHES	0
+SHOW_INTERNAL	0
+STRIP_WIDTH	40
+SHOW_STRIP_LABELS	0
+DATA
+Cyathea_pungens|Loxsomopsis_pearcei	#2AF6FA	order
+Equisetum_ferrissii|Equisetum_bogotense	#FD26FD	order
+Sticherus_compactus|Phanerosorus_major	#E5E022	order
+Crepidomanes_inopinatum|Hymenophyllum_paniense	#FF0D16	order
+Angiopteris_cartilagidens|Danaea_erecta	#965D70	order
+Botrychium_ascendens|Mankyua_chejuense	#3B81FE	order
+Osmunda_lancea|Osmundastrum_cinnamomeum	#16FA00	order
+Archigrammitis_ponapensis|Orthiopteris_ferulacea	#F3872A	order
+Tmesipteris_obliqua|Psilotum_complanatum	#F02E90	order
+Marsilea_angustifolia|Salvinia_cucullata	#2A713B	order
+Anemia_hispida|Lygodium_palmatum	#D6A0F8	order
