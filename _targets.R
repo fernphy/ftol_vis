@@ -6,6 +6,10 @@ library(tarchetypes)
 source("R/functions.R")
 source("R/packages.R")
 
+tar_option_set(
+  imports = "ftolr"
+)
+
 tar_plan(
   # Load tree
   fern_tree = ft_tree(drop_og = TRUE),

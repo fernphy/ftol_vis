@@ -111,6 +111,8 @@ get_monophy <- function(monophy_list, tax_level) {
     as_tibble() %>%
     clean_names() %>%
     mutate(mrca = parse_number(mrca)) %>%
+    # Drop non-monphyletic taxa
+    filter(monophyly != "No") %>%
     # All families should be monophyletic or monotypic
     verify(all(monophyly %in% c("Monotypic", "Yes")))
 }
