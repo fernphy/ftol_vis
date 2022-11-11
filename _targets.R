@@ -46,27 +46,15 @@ tar_plan(
   ),
   # Set colors for monophyletic groups
   family_colors = set_clade_colors(
-    family_tips, "family"
+    family_tips, family
   ),
   suborder_colors = set_clade_colors(
-    suborder_tips, "suborder"
+    suborder_tips, suborder
   ),
   order_colors = set_clade_colors(
-    order_tips, "order"
+    order_tips, order
   ),
   # Write out iTOL annotation files
-  # - node labels
-  tar_file(
-    node_labels,
-    write_itol_node_labels(
-      spanning_tips_list = list(
-        rename(family_tips, taxon = family),
-        rename(suborder_tips, taxon = suborder),
-        rename(order_tips, taxon = order)
-        ),
-      file = "_targets/user/itol/01_node_labels.txt"
-    )
-  ),
   # - family colored strips
   tar_file(
     family_colored_strips,
@@ -74,7 +62,7 @@ tar_plan(
       family_colors,
       dataset_lab = "Family strips",
       dataset_col = "#2986cc", # dark blue
-      "_targets/user/itol/02_family_strip_cols.txt"
+      "_targets/user/itol/01_family_strip_cols.txt"
     )
   ),
   # - suborder colored strips
@@ -84,7 +72,7 @@ tar_plan(
       suborder_colors,
       dataset_lab = "Suborder strips",
       dataset_col = "#8fce00", # dark green
-      "_targets/user/itol/03_suborder_strip_cols.txt"
+      "_targets/user/itol/02_suborder_strip_cols.txt"
     )
   ),
   # - order colored strips
@@ -94,7 +82,7 @@ tar_plan(
       order_colors,
       dataset_lab = "Order strips",
       dataset_col = "#e06666", # dark red
-      "_targets/user/itol/04_order_strip_cols.txt"
+      "_targets/user/itol/03_order_strip_cols.txt"
     )
   ),
   # - family colored branches
@@ -104,7 +92,7 @@ tar_plan(
       family_colors,
       dataset_lab = "Family branches",
       dataset_col = "#d0e0e3", # light blue
-      "_targets/user/itol/05_family_branch_cols.txt"
+      "_targets/user/itol/04_family_branch_cols.txt"
     )
   ),
   # - suborder colored branches
@@ -114,7 +102,7 @@ tar_plan(
       suborder_colors,
       dataset_lab = "Suborder branches",
       dataset_col = "#d9ead3", # light green
-      "_targets/user/itol/06_suborder_branch_cols.txt"
+      "_targets/user/itol/05_suborder_branch_cols.txt"
     )
   ),
   # - order colored branches
@@ -124,7 +112,7 @@ tar_plan(
       order_colors,
       dataset_lab = "Order branches",
       dataset_col = "#f4cccc", # light red
-      "_targets/user/itol/07_order_branch_cols.txt"
+      "_targets/user/itol/06_order_branch_cols.txt"
     )
   ),
   # - tree
@@ -142,7 +130,7 @@ tar_plan(
     itol_zip_file,
     zip_files(
       "_targets/user/itol.zip",
-      c(node_labels, family_colored_strips, order_colored_strips,
+      c(family_colored_strips, order_colored_strips,
       family_colored_branches, order_colored_branches, fern_tree_file)
     )
   )
