@@ -1,4 +1,4 @@
-# Format iTOL annotation files for fern family and order
+# Format annotation files for fern family and order
 
 library(targets)
 library(tarchetypes)
