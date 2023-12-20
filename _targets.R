@@ -1,14 +1,11 @@
-# Format annotation files for fern family and order
+# Format annotation files for plotting fern family and order on tree
+# in taxonium
 
 library(targets)
 library(tarchetypes)
 library(ftolr)
 
 source("R/functions.R")
-
-tar_option_set(
-  imports = "ftolr"
-)
 
 tar_plan(
   # Load tree
@@ -19,12 +16,19 @@ tar_plan(
   fern_tip_data = dplyr::select(
     fern_taxa, species, genus, subfamily, family, suborder, order),
   # Format json config
-  fern_config = jsontools::format_json(
-    tibble::tibble(
-      source = glue::glue("GenBank release {ft_data_ver('gb')}"),
-      title = glue::glue("FTOL v{ft_data_ver('ftol')}")
-    )
+  tar_target(
+    current_release,
+    ft_data_ver("gb"),
+    cue = tar_cue(mode = "always")
   ),
+  tar_target(
+    current_version,
+    ft_data_ver("ftol"),
+    cue = tar_cue(mode = "always")
+  ),
+  fern_config = format_ftol_json(
+    current_release = current_release,
+    current_version = current_version),
   # Write files
   # - tree
   tar_file(
