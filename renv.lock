@@ -569,16 +569,15 @@
     },
     "ftolr": {
       "Package": "ftolr",
-      "Version": "1.7.0",
+      "Version": "1.9.0",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "ftolr",
       "RemoteUsername": "fernphy",
-      "RemotePkgRef": "fernphy/ftolr",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "e6f8e9b2273b3c205562b30cc769045f64113b71",
-      "Hash": "4a23dbbc9a1e6349c2a5445bd26d67b5",
+      "RemoteRepo": "ftolr",
+      "RemoteRef": "main",
+      "RemoteSha": "307c8458056e09203d208545b6895179d506bf03",
+      "Hash": "d232e3c68ff9adcddb11fec170f1f280",
       "Requirements": [
         "ape",
         "assertthat"
@@ -1222,7 +1221,7 @@
       "Package": "renv",
       "Version": "0.15.5",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "6a38294e7d12f5d8e656b08c5bd8ae34",
       "Requirements": []
     },
